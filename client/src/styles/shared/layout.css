@@ -1,0 +1,79 @@
+/* App Layout */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+.section-padding-sm {
+  padding: 3rem 0;
+}
+
+.layout-grid {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Responsive Layout Grid Adaptations */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1480px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .layout-grid { gap: 1.5rem; }
+  .section-padding { padding: 3.5rem 0; }
+  .section-padding-sm { padding: 2rem 0; }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 1rem; }
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr !important; }
+  .layout-grid { gap: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 0.75rem !important; }
+  .layout-grid { gap: 1rem; }
+  .section-padding { padding: 2.25rem 0; }
+  .section-padding-sm { padding: 1.25rem 0; }
+}
+
+@media (max-width: 360px) {
+  .container { padding: 0 0.5rem !important; }
+}

@@ -1,0 +1,47 @@
+/* Master CSS Imports */
+@import './styles/shared/variables.css';
+@import './styles/shared/typography.css';
+@import './styles/shared/layout.css';
+@import './styles/shared/utilities.css';
+@import './styles/shared/animations.css';
+@import './styles/shared/buttons.css';
+@import './styles/shared/cards.css';
+@import './styles/shared/forms.css';
+@import './styles/user/navbar.css';
+@import './styles/user/sidebar.css';
+@import './styles/shared/tables.css';
+@import './styles/shared/modals.css';
+@import './styles/user/homepage.css';
+@import './styles/shared/responsive.css';
+
+/* Fallback Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.page-loading {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  color: var(--text-secondary);
+  font-weight: 600;
+}

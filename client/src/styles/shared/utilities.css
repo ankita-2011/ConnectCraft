@@ -1,0 +1,90 @@
+/* Utilities */
+
+.flex { display: flex; }
+.flex-col { display: flex; flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border: 1px solid rgba(15, 118, 110, 0.2);
+}
+
+.badge-pill.amber {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  border-color: rgba(217, 119, 6, 0.2);
+}
+
+.badge-pill.success {
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+  border-color: rgba(22, 163, 74, 0.2);
+}
+
+.badge-pill.warning {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.badge-pill.danger {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+  border-color: rgba(220, 38, 38, 0.2);
+}
+
+.badge-pill.secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+/* Empty State Container */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--bg-surface);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.empty-state-icon {
+  font-size: 2.5rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+/* Loading Spinner */
+.spinner-teal {
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--color-primary-light);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+

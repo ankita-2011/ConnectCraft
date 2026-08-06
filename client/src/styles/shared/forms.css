@@ -1,0 +1,89 @@
+/* Form Inputs & Controls */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-label {
+  font-size: 0.84375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-label .optional {
+  font-size: 0.775rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.875rem;
+  border-radius: var(--radius-input);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  outline: none;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-xs);
+  box-sizing: border-box;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-input:disabled, .form-select:disabled, .form-textarea:disabled {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.form-help-text {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.form-error-text {
+  font-size: 0.775rem;
+  color: var(--color-danger);
+  margin-top: 0.2rem;
+  font-weight: 500;
+}
+
+/* Input with icon wrapper */
+.input-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-icon-wrapper .input-icon {
+  position: absolute;
+  left: 0.9rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.input-icon-wrapper .form-input {
+  padding-left: 2.5rem;
+}

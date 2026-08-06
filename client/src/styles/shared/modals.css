@@ -1,0 +1,56 @@
+/* Modal Dialogs */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.85rem;
+  overflow-y: auto;
+  animation: fadeIn var(--transition-fast) forwards;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 520px;
+  max-height: calc(100vh - 1.5rem);
+  overflow-y: auto;
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-modal, 20px);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  box-shadow: var(--shadow-card-hover);
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .modal-backdrop {
+    padding: 0.5rem;
+  }
+
+  .modal-content {
+    padding: 1.25rem 1rem;
+    border-radius: 16px;
+    max-height: calc(100vh - 1rem);
+    max-width: 100%;
+  }
+
+  .modal-content button {
+    max-width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}

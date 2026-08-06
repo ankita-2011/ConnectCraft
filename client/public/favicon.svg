@@ -1,0 +1,65 @@
+<svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="emeraldBgGradFav" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#065F46" />
+    </linearGradient>
+
+    <radialGradient id="emeraldPlanetGradFav" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="25%" stop-color="#10B981" />
+      <stop offset="65%" stop-color="#059669" />
+      <stop offset="90%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064E3B" />
+    </radialGradient>
+
+    <linearGradient id="emeraldRingGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A7F3D0" />
+      <stop offset="35%" stop-color="#34D399" />
+      <stop offset="70%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="ringHighlightFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECFDF5" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#A7F3D0" stop-opacity="0.5" />
+    </linearGradient>
+
+    <radialGradient id="planetHighlightFav" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#A7F3D0" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35" />
+    </radialGradient>
+
+    <clipPath id="planetClipFav">
+      <circle cx="50" cy="50" r="22" />
+    </clipPath>
+  </defs>
+
+  <rect width="100" height="100" rx="22" fill="url(#emeraldBgGradFav)" />
+
+  <circle cx="26" cy="24" r="1.2" fill="#A7F3D0" opacity="0.6" />
+  <circle cx="76" cy="74" r="1" fill="#A7F3D0" opacity="0.5" />
+  <path d="M 76 22 L 77.5 25 L 80.5 26.5 L 77.5 28 L 76 31 L 74.5 28 L 71.5 26.5 L 74.5 25 Z" fill="#D1FAE5" opacity="0.75" />
+
+  <g transform="rotate(-28 50 50)">
+    <path d="M 10 50 A 40 12 0 0 1 90 50" stroke="url(#emeraldRingGradFav)" stroke-width="4.5" stroke-linecap="round" opacity="0.75" />
+    <path d="M 16 50 A 34 9 0 0 1 84 50" stroke="url(#ringHighlightFav)" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+  </g>
+
+  <circle cx="50" cy="50" r="22" fill="url(#emeraldPlanetGradFav)" stroke="#34D399" stroke-width="0.75" />
+
+  <g clip-path="url(#planetClipFav)">
+    <path d="M 20 44 C 32 40, 68 40, 80 44 C 68 47, 32 47, 20 44 Z" fill="#34D399" opacity="0.25" />
+    <path d="M 22 58 C 34 54, 66 54, 78 58 C 66 61, 34 61, 22 58 Z" fill="#065F46" opacity="0.3" />
+    <circle cx="50" cy="50" r="22" fill="url(#planetHighlightFav)" />
+  </g>
+
+  <g transform="rotate(-28 50 50)">
+    <path d="M 90 50 A 40 12 0 0 1 10 50" stroke="url(#emeraldRingGradFav)" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M 84 50 A 34 9 0 0 1 16 50" stroke="url(#ringHighlightFav)" stroke-width="1.75" stroke-linecap="round" />
+  </g>
+
+  <circle cx="21" cy="62" r="1.5" fill="#FFFFFF" opacity="0.9" />
+</svg>

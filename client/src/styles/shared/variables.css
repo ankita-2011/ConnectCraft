@@ -1,0 +1,84 @@
+/* Variables */
+
+:root {
+  /* Layout Dimensions */
+  --sidebar-width: 250px;
+  --navbar-height: 70px;
+
+  /* Brand Colors */
+  --color-primary: #0F766E;        /* Community Green / Deep Teal */
+  --color-primary-hover: #115E59;
+  --color-primary-light: #CCFBF1;  /* Soft Teal Highlight */
+  --color-primary-glow: rgba(15, 118, 110, 0.15);
+
+  --color-accent: #D97706;         /* Warm Amber */
+  --color-accent-hover: #B45309;
+
+  /* Surfaces & Background Layering */
+  --bg-primary: #FAFAF9;           /* Background (#FAFAF9) */
+  --bg-section: #F5F5F4;           /* Section Background (#F5F5F4) */
+  --bg-surface: #FFFFFF;           /* Card Background (#FFFFFF) */
+  --bg-secondary: #F5F5F4;         /* Neutral Surface Level 2 */
+  --bg-tertiary: #E7E5E4;          /* Neutral Surface Level 3 */
+
+  /* Official ConnectCraft Sidebar Theme Tokens (Warm Stone #292524 & Emerald Palette) */
+  --bg-sidebar: #292524;
+  --bg-sidebar-hover: #3F3A36;
+  --bg-sidebar-active: #0F766E;
+  --bg-sidebar-active-hover: #115E59;
+  --border-sidebar: rgba(255, 255, 255, 0.08);
+  --text-sidebar: #F5F5F4;
+  --text-sidebar-secondary: #D6D3D1;
+  --icon-sidebar: #A8A29E;
+  --text-sidebar-hover: #FFFFFF;
+  --icon-sidebar-hover: #CCFBF1;
+  --text-sidebar-active: #FFFFFF;
+  --icon-sidebar-active: #FFFFFF;
+
+  /* Borders & Dividers */
+  --border-color: #E7E5E4;         /* Border (#E7E5E4) */
+  --border-subtle: #F5F5F4;
+  --border-focus: #0F766E;
+
+  /* Typography Colors */
+  --text-primary: #1C1917;         /* Primary Text (#1C1917) */
+  --text-secondary: #57534E;       /* Secondary Text (#57534E) */
+  --text-muted: #78716C;           /* Muted Text (#78716C) */
+
+  /* Functional Status Colors */
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-danger: #DC2626;
+  --color-info: #0EA5E9;
+
+  /* Fonts */
+  --font-family-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Strict Border Radius Standards */
+  --radius-btn: 12px;              /* Buttons: 12px */
+  --radius-input: 12px;            /* Inputs: 12px */
+  --radius-card: 18px;             /* Cards: 18px */
+  --radius-modal: 20px;            /* Dialogs: 20px */
+  --radius-pill: 999px;            /* Pills: 999px */
+  --radius-full: 9999px;
+
+  /* Legacy Radii Fallbacks */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 20px;
+
+  /* Subtle Shadows & Depth */
+  --shadow-card: 0 10px 30px rgba(28, 25, 23, 0.06);
+  --shadow-card-hover: 0 18px 40px rgba(28, 25, 23, 0.10);
+  --shadow-xs: 0 1px 2px 0 rgba(28, 25, 23, 0.04);
+  --shadow-sm: 0 4px 12px 0 rgba(28, 25, 23, 0.04);
+  --shadow-md: 0 10px 30px rgba(28, 25, 23, 0.06);
+  --shadow-lg: 0 18px 40px rgba(28, 25, 23, 0.10);
+
+  /* Transition Speeds */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

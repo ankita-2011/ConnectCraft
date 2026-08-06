@@ -1,0 +1,151 @@
+/* Communities Ecosystem */
+
+.community-cover-banner {
+  height: 240px;
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.community-cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(6, 9, 18, 0.1) 0%, rgba(6, 9, 18, 0.8) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.community-logo-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid var(--bg-primary);
+  background-color: var(--bg-secondary);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-size: 2.25rem;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+/* Detail Tabs Layout */
+.detail-tabs-bar {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 2rem;
+  padding-bottom: 0.1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+}
+
+.detail-tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.detail-tab-btn.active {
+  color: var(--color-primary);
+}
+
+.detail-tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+/* 3-Column Community Grid Details */
+.community-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* Tablet Tier (768px – 1023px) */
+@media (max-width: 1023px) {
+  .community-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Forms layout */
+.form-rules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.rule-row-input {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+/* Communities Explorer Layout */
+.communities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Mobile Tier (320px – 767px) */
+@media (max-width: 767px) {
+  .community-cover-banner {
+    height: 160px;
+  }
+
+  .community-cover-overlay {
+    padding: 1.15rem 0.85rem;
+  }
+
+  .community-logo-circle {
+    width: 64px;
+    height: 64px;
+    font-size: 1.5rem;
+  }
+
+  .communities-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+}
